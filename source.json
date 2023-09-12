@@ -1,0 +1,12 @@
+{
+    "name":"Template Package Repository",
+    "id":"com.YOUR_GITHUB_NAME.REPO_NAME.repo",
+    "url":"https://YOUR_GITHUB_NAME.github.io/REPO_NAME/index.json",
+    "author": {
+        "name": "Your Name"
+    },
+    "description":"A example package repository",
+    "githubRepos": [
+        "YOUR_GITHUB_NAME/REPO_NAME"
+    ]
+}
