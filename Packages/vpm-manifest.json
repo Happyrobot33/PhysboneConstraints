@@ -1,1 +1,35 @@
-{"dependencies": {}, "locked": {}}
+{
+  "dependencies": {
+    "com.vrchat.avatars": {
+      "version": "3.4.0-beta.2"
+    },
+    "lyuma.av3emulator": {
+      "version": "3.2.2"
+    },
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.24"
+    }
+  },
+  "locked": {
+    "com.vrchat.avatars": {
+      "version": "3.2.2",
+      "dependencies": {
+        "com.vrchat.base": "3.2.2"
+      }
+    },
+    "com.vrchat.base": {
+      "version": "3.2.2",
+      "dependencies": {}
+    },
+    "lyuma.av3emulator": {
+      "version": "3.2.2",
+      "dependencies": {
+        "com.vrchat.avatars": ">=3.1.0 <3.4.0"
+      }
+    },
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.24",
+      "dependencies": {}
+    }
+  }
+}
