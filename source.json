@@ -1,12 +1,12 @@
 {
-    "name":"Template Package Repository",
-    "id":"com.YOUR_GITHUB_NAME.REPO_NAME.repo",
-    "url":"https://YOUR_GITHUB_NAME.github.io/REPO_NAME/index.json",
+    "name":"Physbone Constraints",
+    "id":"com.happyrobot33.physboneconstraints.repo",
+    "url":"https://www.matthewherber.com/PhysboneConstraints/index.json",
     "author": {
-        "name": "Your Name"
+        "name": "Happyrobot33, GirlyNPC"
     },
-    "description":"A example package repository",
+    "description":"The main level repository for Physbone Constraints",
     "githubRepos": [
-        "YOUR_GITHUB_NAME/REPO_NAME"
+        "Happyrobot33/PhysboneConstraints"
     ]
 }
