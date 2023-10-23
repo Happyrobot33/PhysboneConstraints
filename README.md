@@ -52,6 +52,8 @@ https://github.com/GirlyNPC/Test/assets/144646911/76f6dc66-482b-4f88-a03f-e69cfb
 - These are Physbones 1.1, so don't add them to any of the humanoid parts (chest, left leg, wrist). Add it under instead. If you need to add it to a humanoid part, you can maybe switch them to 1.0.
 - World constraint gets jittery if it's added somewhere that moves. Like a hand, like a head. For best stability, add it under the armature. But certainly, experiment! It also helps to spawn it when it's held leveled.
 - If you add World Constraint's physbone to your armature, you can world-drop your avatar and walk away from it. This is ToS compliant invisibility because your nameplate and hitbox still follows!
+- Cameras can sometimes see constraints, at least World Constraint, as extra jittery.
+- Late-sync isn't much tested. But if it doesn't show automatically for late joiners, try to reset the Physbone
 
 ## License
 
