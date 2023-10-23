@@ -1,29 +1,67 @@
-Get the package [here!](https://www.matthewherber.com/PhysboneConstraints/)
+# PhysboneConstraints
+An alternative to Unity constraints that's designed to work on Quest.
 
-PhysboneConstraints V1.0
+Here's a list of PhysboneConstraints so far:
 
-Legend:
-*OldVersions - Physbone V1.O, or otherwise earlier versions. These are included as an example, but use the later ones!
+- Look-At Constraint
+- Position Constraint
+- World Constraint
+- Springjoint
+- World+Y Rotation Constraint*
+- Physbone Origin Constraint**
 
-*__Nothing - empty gameobject with transform zero'd out, see below for purpose.
+*World+Y is a broken World Constraint that remains in position by rotates around Y axis<br>
+**Origin is a collection of Avatar Dynamics components that have a Root Transform slot. By adding a prefab, it defaults to world origin.
 
-*_PhysboneOriginConstraintV1Examples - Avatar Dynamics components set up with an empty origin reference (__Nothing), and will always be at word origin (often spawn).
+https://github.com/GirlyNPC/Test/assets/144646911/bd118d3e-d678-4920-ad67-72a00e950890
 
-*Look-AtConstraintV1Example - The gameobject will align to face toward the Target
+Someone make a better vid and tell me how to scale it!
 
-*PositionConstraintV1Example - The gameobject will move to the target. You can have multiple targets, but only one active. CTRL+D to duplicate.
+## How to Install:
 
-*World+YRotationConstraintV1Example - The gameobject will stay in the world, but rotate where you face.
+Open VCC and select the project you want to add the package to.<br>
+Here you can select the packages you want to add. Make sure Curated packages are visible.<br>
+Find "PhysboneConstraints" and click the Add button!<br>
 
-*WorldConstraintV3Example - The gameobject will stay in the world where dropped.
-This should be placed under the root (where the meshes are) for best stability.
-On hips/hands/etc, this becomes jittery when moving fast. To best counter that, activate it when your hand/hips is leveled to the ground!
+The package should have been added to the Packages folder. Go there, find PhysboneConstraints, drag-and-drop to Asset folder!
 
+Not using VCC? You can also grab the packages from [Releases](https://github.com/Happyrobot33/PhysboneConstraints/releases)!
 
-For an early tech demo of these concepts, check out: https://youtu.be/oXiGJHUysMU?feature=shared&t=1099
+## Setup Example:
 
-If you have any improved or new designs, feel free to DM me GirlyNPC on Discord or just make a pull request on GitHub.
+This release includes several PhysboneConstraint variants, this shows the Physbone Position Constraint.<br>
+From that, you should get a clear idea of how to set up the rest. </br>
+But check out Q&A/Useful Info section for more info!
 
-Credit:
-Happyrobot33 - for creating all the concepts, making this possible
-GirlyNPC - recreating concepts, improving where possible
+*Due to how Unity animations work, you'll have to set it up on your own. This is really quick!*
+
+- ### Setting up the Physbone Position Constraint
+https://github.com/GirlyNPC/Test/assets/144646911/3ea41bce-6f7e-4f38-9828-efc6485efffe
+
+- ### Setting up the FX layer
+https://github.com/GirlyNPC/Test/assets/144646911/76f6dc66-482b-4f88-a03f-e69cfbfd373f
+
+*Note:*
+- Reset When Disabled was turned on here, due to how I set up the toggle. Depending on what you're doing, you might not need this.
+- The animations were duplicated from frame 0 to 1, transition speed changed to 0.02, because [VRChat recommends so](https://creators.vrchat.com/avatars/state-behaviors/) to minimize desync.
+- [GestureRight paramater](https://creators.vrchat.com/avatars/animator-parameters/#gestureleft-and-gestureright-values) was used here, to simplify testing.
+- [GestureManager](https://github.com/BlackStartx/VRC-Gesture-Manager) was also used, to give a nice UI and to simplify testing.
+
+## Q&A/Useful Info
+- You might have to tweak settings! Like I did above with Reset When Disabled. Changing the gravity slider can help stability in some cases. In others, rotating the entire physbone or the container might help.
+- These are Physbones 1.1, so don't add them to any of the humanoid parts (chest, left leg, wrist). Add it under instead. If you need to add it to a humanoid part, you can maybe switch them to 1.0.
+- World constraint gets jittery if it's added somewhere that moves. Like a hand, like a head. For best stability, add it under the armature. But certainly, experiment! It also helps to spawn it when it's held leveled.
+- If you add World Constraint's physbone to your armature, you can world-drop your avatar and walk away from it. This is ToS compliant invisibility because your nameplate and hitbox still follows!
+
+## License
+
+MIT License.
+
+## Credits:
+
+[HappyRobot33](https://github.com/HappyRobot33). For [creating the concepts](https://youtu.be/oXiGJHUysMU?feature=shared&t=1105), making the repo available on VCC.
+
+[GirlyNPC](https://github.com/GirlyNPC). For recreating the work based on the concepts, solving world constraint, the #readme.
+
+## Contact:
+You can DM GirlyNPC on Discord for any questions, or if you want to contribute. If you need help with your setup, it's better to ask in VRChat's discord in the Avatar-Help channel. Feel free to ping me
