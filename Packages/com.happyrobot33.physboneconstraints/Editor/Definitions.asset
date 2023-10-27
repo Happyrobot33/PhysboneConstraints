@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d725369c78643dd42b4dffd144c74ad7, type: 3}
+  m_Name: Definitions
+  m_EditorClassIdentifier: 
+  prefabs:
+  - prefab: {fileID: 4584525351270694266, guid: 6dffd1d47c6f3b64f86e797506adf657,
+      type: 3}
+    prefabName: Origin
+    prefabDescription: Will lock any gameobjects under it to the world origin
+  - prefab: {fileID: 7409643454943397613, guid: 2ba533ec633fa8b4193373374e3aeb1e,
+      type: 3}
+    prefabName: Look At
+    prefabDescription: The gameobject will align to face toward the Target
+  - prefab: {fileID: 1098731020498274488, guid: 179d2ecc45df76c4ba86b3aa62171dcc,
+      type: 3}
+    prefabName: Position
+    prefabDescription: The gameobject will move to the target. You can have multiple
+      targets, but only one active. CTRL+D to duplicate.
+  - prefab: {fileID: 6781142855394176147, guid: 0fabf3375ece3fe44a02919247b37a17,
+      type: 3}
+    prefabName: Spring
+    prefabDescription: Simple spring
+  - prefab: {fileID: 6142900838569165022, guid: 7f0e04b51e06a824da6f7d4324da013e,
+      type: 3}
+    prefabName: World Free Rotation
+    prefabDescription: The gameobject will stay in the world, but rotate where its
+      root is, like a look at constraint
+  - prefab: {fileID: 551450019329295224, guid: b51b0bf80486ae04f8fefb12dc40c00e, type: 3}
+    prefabName: World Locked Rotation
+    prefabDescription: The gameobject will stay in the world where dropped. This
+      should be placed under the root (where the meshes are) for best stability.
+      On hips/hands/etc, this becomes jittery when moving fast. To best counter that,
+      activate it when your hand/hips is leveled to the ground!
