@@ -36,7 +36,10 @@ But check out Q&A/Useful Info section for more info!
 *Due to how Unity animations work, you'll have to set it up on your own. This is really quick!*
 
 - ### Setting up the Physbone Position Constraint
-https://github.com/GirlyNPC/Test/assets/144646911/3ea41bce-6f7e-4f38-9828-efc6485efffe
+
+https://github.com/Happyrobot33/PhysboneConstraints/assets/144646911/1a5c5530-768f-4710-b4c5-d88acb6f8074
+
+
 
 - ### Setting up the FX layer
 https://github.com/GirlyNPC/Test/assets/144646911/76f6dc66-482b-4f88-a03f-e69cfbfd373f
