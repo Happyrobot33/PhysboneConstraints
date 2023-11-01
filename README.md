@@ -39,20 +39,19 @@ But check out Q&A/Useful Info section for more info!
 
 https://github.com/Happyrobot33/PhysboneConstraints/assets/144646911/1a5c5530-768f-4710-b4c5-d88acb6f8074
 
+- ### Setting it up
 
+Here's an example of setting up Physbone Position Constraint.
 
-- ### Setting up the FX layer
-N/A
+https://github.com/Happyrobot33/PhysboneConstraints/assets/144646911/8a12f687-c477-4c0e-bc76-f29d53aaab7b
 
 *Note:*
 - Reset When Disabled was turned on here, due to how I set up the toggle. Depending on what you're doing, you might not need this.
-- The animations were duplicated from frame 0 to 1, transition speed changed to 0.02, because [VRChat recommends so](https://creators.vrchat.com/avatars/state-behaviors/) to minimize desync.
-- [GestureRight paramater](https://creators.vrchat.com/avatars/animator-parameters/#gestureleft-and-gestureright-values) was used here, to simplify testing.
-- [GestureManager](https://github.com/BlackStartx/VRC-Gesture-Manager) was also used, to give a nice UI and to simplify testing.
+- more details to come into the future. But essentially, you just have to play with it.
 
 ## Q&A/Useful Info
 - You might have to tweak settings! Like I did above with Reset When Disabled. Changing the gravity slider can help stability in some cases. In others, rotating the entire physbone or the container might help.
-- These are Physbones 1.1, so don't add them to any of the humanoid parts (chest, left leg, wrist). Add it under instead. If you need to add it to a humanoid part, you can maybe switch them to 1.0.
+- These are Physbones 1.1, so don't add them to any of the humanoid parts (chest, left leg, wrist). While doing so can be fine, it can also not! Add it under instead, to a new gamobject.
 - World constraint gets jittery if it's added somewhere that moves. Like a hand, like a head. For best stability, add it under the armature. But certainly, experiment! It also helps to spawn it when it's held leveled.
 - If you add World Constraint's physbone to your armature, you can world-drop your avatar and walk away from it. This is ToS compliant invisibility because your nameplate and hitbox still follows!
 - Cameras can sometimes see constraints, at least World Constraint, as extra jittery.
