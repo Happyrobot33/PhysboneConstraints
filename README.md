@@ -13,7 +13,7 @@ Here's a list of PhysboneConstraints so far:
 *World+Y is a broken World Constraint that remains in position by rotates around Y axis<br>
 **Origin is a collection of Avatar Dynamics components that have a Root Transform slot. By adding a prefab, it defaults to world origin.
 
-https://github.com/GirlyNPC/Test/assets/144646911/bd118d3e-d678-4920-ad67-72a00e950890
+https://github.com/GirlyNPC/Test/assets/144646911/76f6dc66-482b-4f88-a03f-e69cfbfd373f
 
 Someone make a better vid and tell me how to scale it!
 
@@ -42,7 +42,7 @@ https://github.com/Happyrobot33/PhysboneConstraints/assets/144646911/1a5c5530-76
 
 
 - ### Setting up the FX layer
-https://github.com/GirlyNPC/Test/assets/144646911/76f6dc66-482b-4f88-a03f-e69cfbfd373f
+N/A
 
 *Note:*
 - Reset When Disabled was turned on here, due to how I set up the toggle. Depending on what you're doing, you might not need this.
