@@ -37,10 +37,6 @@ But check out Q&A/Useful Info section for more info!
 
 - ### Setting up the Physbone Position Constraint
 
-https://github.com/Happyrobot33/PhysboneConstraints/assets/144646911/1a5c5530-768f-4710-b4c5-d88acb6f8074
-
-- ### Setting it up
-
 Here's an example of setting up Physbone Position Constraint.
 
 https://github.com/Happyrobot33/PhysboneConstraints/assets/144646911/8a12f687-c477-4c0e-bc76-f29d53aaab7b
