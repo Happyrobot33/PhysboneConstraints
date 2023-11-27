@@ -19,8 +19,7 @@ Someone make a better vid and tell me how to scale it!
 
 ## How to Install:
 
-You can add PhysboneConstraints directly via VCC, [Releases](vcc://vpm/addRepo?url=https://www.matthewherber.com/PhysboneConstraints/index.json)<br>
-Or from [here!](https://www.matthewherber.com/PhysboneConstraints/) if the first link fails.
+You can add PhysboneConstraints directly via VCC, by pressing [here!](https://www.matthewherber.com/PhysboneConstraints/).
 
 Not using VCC or having troubles? You can also grab the packages from [Releases](https://github.com/Happyrobot33/PhysboneConstraints/releases)!<br> 
 
