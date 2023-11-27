@@ -19,13 +19,10 @@ Someone make a better vid and tell me how to scale it!
 
 ## How to Install:
 
-Open VCC and select the project you want to add the package to.<br>
-Here you can select the packages you want to add. Make sure Curated packages are visible.<br>
-Find "PhysboneConstraints" and click the Add button!<br>
+You can add PhysboneConstraints directly via VCC, [Releases](vcc://vpm/addRepo?url=https://www.matthewherber.com/PhysboneConstraints/index.json)<br>
+Or from [here!](https://www.matthewherber.com/PhysboneConstraints/) if the first link fails.
 
-The package should have been added to the Packages folder. Go there, find PhysboneConstraints, drag-and-drop to Asset folder!
-
-Not using VCC? You can also grab the packages from [Releases](https://github.com/Happyrobot33/PhysboneConstraints/releases)!
+Not using VCC or having troubles? You can also grab the packages from [Releases](https://github.com/Happyrobot33/PhysboneConstraints/releases)!<br> 
 
 ## Setup Example:
 
@@ -43,7 +40,7 @@ https://github.com/Happyrobot33/PhysboneConstraints/assets/144646911/8a12f687-c4
 
 *Note:*
 - Reset When Disabled was turned on here, due to how I set up the toggle. Depending on what you're doing, you might not need this.
-- more details to come into the future. But essentially, you just have to play with it.
+- Also zeroed out the values in the transform position, so it would be at the hand.
 
 ## Q&A/Useful Info
 - You might have to tweak settings! Like I did above with Reset When Disabled. Changing the gravity slider can help stability in some cases. In others, rotating the entire physbone or the container might help.
@@ -62,6 +59,9 @@ MIT License.
 [HappyRobot33](https://github.com/HappyRobot33). For [creating the concepts](https://youtu.be/oXiGJHUysMU?feature=shared&t=1105), making the repo available on VCC.
 
 [GirlyNPC](https://github.com/GirlyNPC). For recreating the work based on the concepts, solving world constraint, the #readme.
+
+[Reverseuh](https://media.discordapp.net/stickers/1165089074869186580.webp?size=160). For helping GirlyNPC test VCC.
+
 
 ## Contact:
 You can DM GirlyNPC on Discord for any questions, or if you want to contribute. If you need help with your setup, it's better to ask in VRChat's discord in the Avatar-Help channel. Feel free to ping me
